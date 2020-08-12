@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <TextField fx:id="user_name" layoutX="107.0" layoutY="59.0" promptText="User Name" />
+      <TextField fx:id="user_id" layoutX="107.0" layoutY="111.0" promptText="User ID (Unique)" />
+      <TextField fx:id="phone_nos" layoutX="107.0" layoutY="162.0" promptText="Phone Number" />
+      <TextField fx:id="email_id" layoutX="107.0" layoutY="216.0" promptText="EmailID" />
+      <PasswordField fx:id="passwd" layoutX="107.0" layoutY="269.0" promptText="Password" />
+      <Button fx:id="reg" layoutX="156.0" layoutY="394.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <PasswordField fx:id="wallet_passwd" layoutX="107.0" layoutY="320.0" promptText="4 Digit Wallet Pin" />
+      <Label fx:id="unfilled" layoutX="107.0" layoutY="351.0" prefHeight="21.0" prefWidth="187.0" textFill="#f20707" />
+      <Label layoutX="294.0" layoutY="55.0" text="*" textFill="#f50202" />
+      <Label layoutX="294.0" layoutY="111.0" text="*" textFill="#fc0101" />
+      <Label layoutX="294.0" layoutY="162.0" text="*" textFill="#f20202" />
+      <Label layoutX="294.0" layoutY="269.0" text="*" textFill="#f20303" />
+      <Label layoutX="294.0" layoutY="320.0" text="*" textFill="#f80505" />
+   </children>
+</AnchorPane>

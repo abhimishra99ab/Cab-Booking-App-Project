@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane prefHeight="736.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.startpageController">
+   <children>
+      <ComboBox fx:id="pickup" layoutX="216.0" layoutY="76.0" prefHeight="31.0" prefWidth="169.0" promptText="Select Pick-up" />
+      <ComboBox fx:id="dropoff" layoutX="216.0" layoutY="131.0" prefHeight="31.0" prefWidth="169.0" promptText="Select Drop-off" />
+      <Button fx:id="new_ride" layoutY="-1.0" mnemonicParsing="false" onAction="#newRide" prefHeight="52.0" prefWidth="105.0" text="New Ride" />
+      <Button fx:id="wallet" layoutX="516.0" layoutY="-1.0" mnemonicParsing="false" onAction="#wallet_func" prefHeight="52.0" prefWidth="84.0" text="Wallet" />
+      <Button fx:id="book_cab" layoutX="259.0" layoutY="190.0" mnemonicParsing="false" onAction="#book_cab_func" text="Book Cab" />
+      <Label layoutX="98.0" layoutY="301.0" text="Trip Details" />
+      <Label layoutX="404.0" layoutY="305.0" text="Driver Details" />
+      <Label fx:id="time_out" alignment="CENTER" layoutX="181.0" layoutY="602.0" prefHeight="43.0" prefWidth="188.0" />
+      <Label fx:id="driver_arrival_time" layoutX="179.0" layoutY="345.0" text="-" />
+      <Label fx:id="trip_duration" layoutX="179.0" layoutY="406.0" text="-" />
+      <Label fx:id="trip_cost" layoutX="179.0" layoutY="499.0" text="-" />
+      <Label layoutX="343.0" layoutY="342.0" prefHeight="21.0" prefWidth="58.0" text="Name" />
+      <Label fx:id="driver_name" layoutX="451.0" layoutY="344.0" prefHeight="21.0" prefWidth="98.0" text="-" />
+      <Label layoutX="343.0" layoutY="417.0" text="Contact" />
+      <Label layoutX="343.0" layoutY="492.0" text="Rating" />
+      <Label fx:id="driver_phone_nos" layoutX="448.0" layoutY="413.0" text="-" />
+      <Label fx:id="driver_rating" layoutX="446.0" layoutY="488.0" text="-" />
+      <Label alignment="CENTER" layoutX="44.0" layoutY="335.0" prefHeight="43.0" prefWidth="89.0" text="Driver Arrival Time" wrapText="true" />
+      <Label layoutX="47.0" layoutY="400.0" prefHeight="52.0" prefWidth="75.0" text="Trip Duration" wrapText="true" />
+      <Label layoutX="49.0" layoutY="488.0" prefHeight="52.0" prefWidth="84.0" text="Estimated Cost" wrapText="true" />
+      <Label fx:id="pennyless" alignment="CENTER" layoutX="201.0" layoutY="540.0" prefHeight="21.0" prefWidth="199.0" textAlignment="CENTER" textFill="#ff3333" underline="true" />
+      <Label fx:id="reached" alignment="CENTER" layoutX="24.0" layoutY="655.0" prefHeight="52.0" prefWidth="249.0" textAlignment="CENTER" textFill="#23903d" wrapText="true">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <ProgressBar fx:id="pBar" layoutX="188.0" layoutY="265.0" prefHeight="23.0" prefWidth="335.0" progress="0.0" />
+      <Label fx:id="driver_here" alignment="CENTER" contentDisplay="CENTER" layoutX="241.0" layoutY="234.0" prefHeight="21.0" prefWidth="120.0" textFill="#067ee8" />
+      <Rating fx:id="rate" layoutX="324.0" layoutY="655.0" />
+      <CheckBox fx:id="rating_given" layoutX="390.0" layoutY="698.0" mnemonicParsing="false" onAction="#rating_given_action" />
+      <Label layoutX="48.0" layoutY="266.0" text="journey's progress :" />
+   </children>
+</AnchorPane>

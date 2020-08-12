@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.walletPageLoginController">
+   <children>
+      <TextField fx:id="user_id" layoutX="107.0" layoutY="131.0" promptText="User ID" />
+      <PasswordField fx:id="wallet_pin" layoutX="107.0" layoutY="192.0" promptText="4 Digit Wallet Pin" />
+      <Button fx:id="continuer" layoutX="160.0" layoutY="274.0" mnemonicParsing="false" onAction="#continues" text="Continue" />
+      <Label fx:id="wrong_input" layoutX="108.0" layoutY="223.0" prefHeight="21.0" prefWidth="217.0" textFill="#f50707" />
+   </children>
+</AnchorPane>
